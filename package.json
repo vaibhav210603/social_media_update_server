@@ -1,0 +1,21 @@
+{
+  "name": "social-media-calendar-reminder",
+  "version": "1.0.0",
+  "description": "Sends a daily email with tomorrow's social media post suggestions, sourced from a Google Sheets calendar.",
+  "private": true,
+  "scripts": {
+    "build": "tsc --noEmit",
+    "dev": "vercel dev",
+    "trigger": "ts-node scripts/run-locally.ts"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/nodemailer": "^6.4.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "@vercel/node": "^3.2.0"
+  }
+}
